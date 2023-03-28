@@ -1,0 +1,24 @@
+.search-pokemon {
+ display: flex;
+ justify-content: center;
+}
+
+.pokemon-title {
+ background-color: black;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ color: aliceblue;
+}
+
+.pokemon-title input {
+ text-align: center;
+ width: 200px;
+ height: 40px;
+ border-radius: 15px;
+ border: 2px solid aliceblue;
+ font-size: 18px;
+}
+

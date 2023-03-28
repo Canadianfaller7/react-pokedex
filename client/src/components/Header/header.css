@@ -1,0 +1,11 @@
+.hero {
+  /* display: flex; */
+  background-image: url('../../assets/images/homepage-banner.png');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-size: cover;
+  overflow: hidden;
+  width: 100vw;
+  height: 17vw;
+}
