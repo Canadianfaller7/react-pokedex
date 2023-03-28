@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  width: 100vw;
+  height: 3.5rem;
+  z-index: 3;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100vw;
+}
+
+.homeBtn a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.0rem;
+  transition: width 2s, height 4s;
+  margin-left: 20px;
+  color: #fff;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  width: calc(100% / 4); /* divide the width by the number of li elements */
+  padding: 0 12.5px; /*increase the padding to add more space between links */
+  transition: width 2s, height 4s;
+}
+
+nav ul li:last-child {
+  margin-right: 25px;
+}
+
+nav ul li a {
+  /*  allow the a tags to take up the available space */
+  /* flex: 1;  */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-size: 1.0rem;
+  transition: width 2s, height 4s;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li:hover, .navbar a:hover {
+  color: rgb(128, 7, 184);
+  border-bottom: 3px solid rgb(128, 7, 184);
+  cursor: pointer;
+}
+
+.nav-link.active {
+  border-bottom: 3px solid rgb(184, 7, 160);
+}
