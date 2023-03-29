@@ -1,24 +1,55 @@
 .search-pokemon {
  display: flex;
  justify-content: center;
+ align-items: center;
 }
 
 .pokemon-title {
- background-color: black;
  width: 100%;
- height: 100%;
  display: flex;
  flex-direction: column;
  align-items: center;
  color: aliceblue;
+ margin-top: 15vw;
 }
 
-.pokemon-title input {
+/* .pokemon-title input {
  text-align: center;
  width: 200px;
  height: 40px;
  border-radius: 15px;
  border: 2px solid aliceblue;
  font-size: 18px;
+} */
+/* @media screen and (min-width: 425px){ 
+  .pokemon-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 15vw;
+  }
+
+} */
+
+@media screen and (min-width: 425px){ 
+  .pokemon-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .pokemon-title {
+    margin-top: 10vw;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .pokemon-title {
+    margin-top: 5vw;
+    font-size: 2rem;
+  }
 }
 
