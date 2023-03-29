@@ -1,7 +1,7 @@
 import {useState} from "react";
 import Axios from "axios";
 import { GeneratePokemon } from "../index";
-import "./pokeStats.css";
+import "./pokemonInfo.css";
 
 const PokemonStats = () => {
   const [pokemonId, setPokemonId] = useState("");

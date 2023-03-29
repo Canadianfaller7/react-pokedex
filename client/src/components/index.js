@@ -1,5 +1,5 @@
 import Header from './Header/Header';
-import PokeDetails from './PokeStats/PokeStats';
+import PokeDetails from './PokemonInfo/PokemonInfo';
 import Navbar from './Navbar/Navbar';
 import HomePage from '../pages/HomePage/HomePage';
 import SearchPokemon from '../pages/SearchPokemon/SearchPokemon';
