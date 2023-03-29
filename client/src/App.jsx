@@ -3,7 +3,7 @@ import {ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from "@apol
 import {setContext} from "@apollo/client/link/context";
 import { useState } from "react";
 
-import {HomePage, SearchPokemon, PokeDetails, Navbar, Header } from "./components/index";
+import {HomePage, SearchPokemon, PokemonInfo, Navbar, Header } from "./components/index";
 
 import AuthUtil from "./utils/auth";
 import './App.css';
@@ -40,7 +40,7 @@ const App = () => {
        return <Route path='/search' element={<SearchPokemon />} />;
      }
      if (currentPage === "Pokemon Details") {
-       return <Route path='/details/:id' element={<PokeDetails />} />;
+       return <Route path='/details/:id' element={<PokemonInfo />} />;
      }
      if (currentPage === "Null") {
        return <Route path='*' element={<NotFound />} />;
