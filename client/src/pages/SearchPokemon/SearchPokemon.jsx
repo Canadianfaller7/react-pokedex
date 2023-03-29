@@ -1,5 +1,5 @@
 import './searchPokemon.css'
-import { PokeDetails } from '../../components/index'
+import { PokemonInfo } from '../../components/index'
 const SearchPokemon = () => {
 
  return (
@@ -8,7 +8,7 @@ const SearchPokemon = () => {
      <h1>
       Search Pokemon
      </h1>
-     <PokeDetails/>
+     <PokemonInfo/>
     </div>
    </div>
  )
