@@ -1,9 +1,12 @@
 import React from "react";
 import "./homePage.css";
 const Homepage = () => {
+
   return (
     <div className='poke-home'>
-      <h1>Welcome! This is the home page</h1>
+      <p>Welcome to the home page!</p>
+      <p>Please login or create an</p>
+      <p> account in order to hunt!</p>
     </div>
   );
 };

@@ -4,24 +4,22 @@ import { GeneratePokemon } from "../index";
 import "./pokemonInfo.css";
 
 const PokemonStats = () => {
-  const [chosenPokemon, setChosenPokemon] = useState({id:1});
-  const [pokemon, setPokemon] = useState({
-    // id: 1,
-    // name: "",
-    // type: ["grass", "poison"],
-    // height: 7,
-    // weight: 69,
-    // image: "",
-    // stats: [],
-  });
+  // setting the state to bulbasaur to have a base pokemon when first searching
+  const [pokemon, setPokemon] = useState({});
+  // set loading state to false since we aren't loading anything yet
   const [loading, setLoading] = useState(false);
   
+  // function to make api call to get information about pokemon
   const searchPokemon = async () => {
     try {
+      // setting loading state to true
       setLoading(true);
+
+      // fetching random pokemon id
       const response = await Axios.get(
         `https://pokeapi.co/api/v2/pokemon/${Math.floor(Math.random() * 983) + 1}/`
       );
+      // setting pokemon state to the random id and getting values from api response
       setPokemon({
         id: response.data.id,
         name: response.data.name,
@@ -31,32 +29,17 @@ const PokemonStats = () => {
         image: response.data.sprites.other["official-artwork"].front_default,
         stats: response.data.stats,
       });
-      setChosenPokemon(true);
-      console.log(response.data);
+      // set loading to false again now we have our data
       setLoading(false);
-      // setPokemonId(response.data.name)
-      // return pokemonData
+      // catch and console log any errors
     } catch (error) {
       console.log(error);
     }
   };
   
+  // this is 
   useEffect(() => {
-    Axios.get(`https://pokeapi.co/api/v2/pokemon/${chosenPokemon.id}`)
-    .then((res) => {
-      setPokemon({
-        id:res.data.id,
-        name: res.data.name,
-        type: res.data.types.map(type => type.type.name.split(' ')).join(', '),
-        height: res.data.height,
-        weight: res.data.weight,
-        image: res.data.sprites.other["official-artwork"].front_default,
-        stats: res.data.stats,
-      });
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+    searchPokemon()
   }, []);
   console.log(pokemon);
 
@@ -69,13 +52,14 @@ const PokemonStats = () => {
       </div>
       <div className='pokemon-info'>
         {loading ? <h4 className="poke-details">Loading...</h4> : ""}
-        {!chosenPokemon ? (
-          <h1>You haven't caught any pokemon yet... Go catch them all!</h1>
+        {!pokemon ? (
+          <h1 className="no-pokemon">You haven't caught any pokemon yet... Go catch them all!</h1>
 				) : (
 						<>
 							<div>
 								<h1 className='poke-details' id="poke-name">{pokemon.name}</h1>
 								<h2 className='poke-details' id="poke-type">{pokemon.type}</h2>
+                
 							</div>
 							{/* <div className="img-header">
 								<h3>Normal</h3>

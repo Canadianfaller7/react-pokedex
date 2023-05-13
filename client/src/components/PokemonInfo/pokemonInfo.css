@@ -23,8 +23,12 @@
     cursor: pointer;
 }
 
-.pokemon-info h1{
-    font-size: 1.15rem;
+.no-pokemon{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.pokemon-info h1, h2{
     color: aliceblue;
     margin: 10px;
     padding: 5px;
@@ -45,6 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.65rem;
 }
 
 .poke-img {
@@ -65,6 +70,12 @@
     }
     #poke-name {
         font-size: 2.5rem;
+    }
+    #poke-type {
+        font-size: 1.85rem;
+    }
+    .no-pokemon{
+        font-size: 1.4rem;
     }
     .pokemon-img {
         width: 50vw;
