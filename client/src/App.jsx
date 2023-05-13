@@ -52,7 +52,7 @@ const App = () => {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div>
+        <div className='pages'>
           <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
           <Header />
           <Routes>{pageRoute()}</Routes>

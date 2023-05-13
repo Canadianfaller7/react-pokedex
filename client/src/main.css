@@ -1,0 +1,31 @@
+:root {
+  --pagemargin:5%;
+  --mint-teal: rgb(9, 248, 248);
+  --dark-grey: rgb(63, 63, 63);
+  --off-grey: rgb(199, 199, 199);
+  --off-white-blue: rgb(232, 252, 255);
+  --transition: all 500ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: black;
+  font-family: 'Pokemon Hollow','Press Start 2P', cursive;
+}
+
+.pages {
+    width: 100%;
+    height: 100%;
+}

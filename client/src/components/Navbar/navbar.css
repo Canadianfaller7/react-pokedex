@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -27,6 +22,7 @@
   align-items: center;
   text-decoration: none;
   font-size: 1.0rem;
+  font-family: 'Press Start 2P', cursive;
   transition: width 2s, height 4s;
   margin-left: 20px;
   color: #fff;
@@ -40,7 +36,7 @@ nav ul {
 }
 
 nav ul li {
-  width: calc(100% / 4); /* divide the width by the number of li elements */
+  width: calc(100% / 2); /* divide the width by the number of li elements */
   padding: 0 12.5px; /*increase the padding to add more space between links */
   transition: width 2s, height 4s;
 }
@@ -56,7 +52,8 @@ nav ul li a {
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
-  font-size: 1.0rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: .60rem;
   transition: width 2s, height 4s;
   text-decoration: none;
   color: #fff;
