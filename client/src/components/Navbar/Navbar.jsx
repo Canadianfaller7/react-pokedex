@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = ({ currentPage, handlePageChange }) => {
@@ -7,32 +7,32 @@ const Navbar = ({ currentPage, handlePageChange }) => {
       <nav className='navbar'>
         <div className='navContainer'>
           <div className='homeBtn'>
-            <Link
+            <NavLink exact
               to='/'
               onClick={() => handlePageChange("Home")}
               className={currentPage === "Home" ? "nav-link active" : "nav-link"}
             >
               Home
-            </Link>
+            </NavLink>
           </div>
           <ul className='navMenu'>
             <li>
-              <Link
+              <NavLink
                 to='/search'
                 onClick={() => handlePageChange("Search")}
                 className={currentPage === "Search" ? "nav-link active" : "nav-link"}
               >
                 Search
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to='/details'
                 onClick={() => handlePageChange("Pokemon Details")}
                 className={currentPage === "Pokemon Details" ? "nav-link active" : "nav-link"}
               >
                 Details
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

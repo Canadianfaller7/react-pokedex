@@ -10,7 +10,7 @@
  flex-direction: column;
  align-items: center;
  color: aliceblue;
- margin-top: 15vw;
+ margin-top: 5vw;
 }
 
 /* .pokemon-title input {
@@ -39,16 +39,16 @@
   }
 }
 
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
   .pokemon-title {
     margin-top: 10vw;
     font-size: 1.5rem;
   }
-}
+} */
 
 @media screen and (min-width: 768px){
   .pokemon-title {
-    margin-top: 5vw;
+    margin-top: 2vw;
     font-size: 2rem;
   }
 }

@@ -34,7 +34,7 @@ const App = () => {
 
    const pageRoute = () => {
      if (currentPage === "Home") {
-       return <Route path='/' element={<HomePage />} />;
+       return <Route exact path='/' element={<HomePage />} />;
      }
      if (currentPage === "Search") {
        return <Route path='/search' element={<SearchPokemon />} />;

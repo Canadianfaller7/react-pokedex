@@ -69,9 +69,9 @@ const PokemonStats = () => {
 								<img src={pokemon.image} alt={pokemon.name} className='pokemon-img' />
 								{/* <img src={pokemon.image.front_shiny} alt={pokemon.name} className='pokemon-img' /> */}
               </div>
-              <div className="poke-details">
-                <button className="search-btn">View Details</button>
-              </div>
+              {/* <div> */}
+                <button className="search-btn viewBtn">View Details</button>
+              {/* </div> */}
 						</>
         )}
       </div>
