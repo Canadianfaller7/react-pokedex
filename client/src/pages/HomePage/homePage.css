@@ -1,8 +1,4 @@
 .poke-home {
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column; */
   font-family: "Press Start 2P", cursive;
   border-radius: 2px;
   margin: 10vw 5px 5vw 5px;
@@ -33,29 +29,6 @@
   }
 }
 
-/* .poke-home h1 {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border-right: .15em solid black;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation: 
-    typing 6.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: black; }
-} */
-
 /* Styling for home page text */
 .poke-home p {
   border-right: 0.15em solid black;
@@ -79,16 +52,19 @@
   opacity: 0;
   -webkit-animation: type2 2.5s steps(40, end);
   animation: type2 2.5s steps(40, end);
+  /* Setting delay on the animation so it doesn't go right after the first p text*/
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-/* Animation for the third home page text */
+/* Animation for the third home page text,  */
 .poke-home p:nth-child(3) {
   width: 25em;
   opacity: 0;
+  /* blinking and writing effect for chrome and safari 5*/
   -webkit-animation: type3 2.5s steps(40, end), blink 0.5s step-end infinite alternate;
+  /* blinking and writing effect for all other browsers*/
   animation: type3 2.5s steps(40, end), blink 0.5s step-end infinite alternate;
   -webkit-animation-delay: 2.5s;
   animation-delay: 5s;
@@ -96,6 +72,7 @@
   animation-fill-mode: forwards;
 }
 
+/* this is setting up the effect of the black line as if the text were being typed out */
 @keyframes type {
   0% {
     width: 0;
@@ -189,11 +166,7 @@
 
 @media only screen and (min-width: 375px) and (max-width: 1440px) {
   .poke-home {
-    /* margin: 10vw 5px 0 5px; */
     padding: 12px 10px 0 10px;
-    /* padding-right: 0; */
-    /* height: 30vw; */
-    /* line-height: 20px; */
   }
   .poke-home p {
     font-size: 0.85rem;
@@ -201,13 +174,9 @@
 }
 @media only screen and (min-width: 425px) {
   .poke-home {
-    /* margin: 10vw 5px 0 5px; */
     margin-left: 7px;
     margin-right: 7px;
     padding: 15px 10px 0 10px;
-    /* padding-right: 0; */
-    /* height: 30vw; */
-    /* line-height: 20px; */
   }
   .poke-home p {
     font-size: 0.95rem;
@@ -215,28 +184,20 @@
 }
 @media only screen and (min-width: 768px) {
   .poke-home {
-    /* margin: 10vw 5px 0 5px; */
     margin-left: 10px;
     margin-right: 10px;
     padding: 12px 10px 0 10px;
-    /* padding-right: 0; */
-    /* height: 30vw; */
-    /* line-height: 20px; */
   }
   .poke-home p {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .poke-home {
-    /* margin: 10vw 5px 0 5px; */
     margin-left: 15px;
     margin-right: 15px;
     padding: 12px 10px 0 20px;
-    /* padding-right: 0; */
-    /* height: 30vw; */
-    /* line-height: 20px; */
   }
   .poke-home p {
     font-size: 1.75rem;
@@ -245,20 +206,11 @@
 }
 @media only screen and (min-width: 1440px) {
   .poke-home {
-    /* margin: 10vw 5px 0 5px; */
     margin-left: 20px;
     margin-right: 20px;
-    /* padding-right: 0; */
-    /* height: 30vw; */
-    /* line-height: 20px; */
   }
   .poke-home p {
     font-size: 2rem;
     line-height: 3rem;
   }
 }
-/* @media only screen and (min-width: 375px) and (max-width: 1440px) {
-  .poke-home p{
-    font-size: .85rem;
-  }
-} */

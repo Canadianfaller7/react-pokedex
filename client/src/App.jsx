@@ -51,7 +51,7 @@ const App = () => {
 
   return (
     <ApolloProvider client={client}>
-      <Router>
+      <Router basename='/'>
         <div className='pages'>
           <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
           <Header />

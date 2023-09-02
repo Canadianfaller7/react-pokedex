@@ -2,7 +2,7 @@ import React from 'react'
 
 const GeneratePokemon = (props) => {
   return (
-   <button className='search-btn' onClick={props.onClick}>Catch Pokemon</button>
+   <button className='search-btn' onClick={props.onClick}>Wild Pokemon</button>
   )
 }
 

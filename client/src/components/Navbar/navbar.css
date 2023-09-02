@@ -46,8 +46,6 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  /*  allow the a tags to take up the available space */
-  /* flex: 1;  */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -68,3 +66,26 @@ nav ul li a {
 .nav-link.active {
   border-bottom: 3px solid rgb(184, 7, 160);
 }
+
+@media only screen and (min-width: 768px) and (max-width: 2560px) {
+  .navbar {
+    height: 7vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .homeBtn a { 
+    font-size: 1.5rem;
+  }
+  nav ul li a {
+    font-size: .75rem;
+  }
+} 
+@media only screen and (min-width: 2560px) {
+  .homeBtn a { 
+    font-size: 2.25rem;
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+} 

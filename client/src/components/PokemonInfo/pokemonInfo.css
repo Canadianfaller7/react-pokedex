@@ -1,136 +1,147 @@
 .pokemon-search {
- width: 100%;
- display: flex;
- flex-direction: column;
- align-items: center;
- color: aliceblue;
- /* margin-top: 5vw; */
- /* margin-bottom: 0vw; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
 }
 
 .search-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:10px;
-    padding: 3px 5px 0 5px;
-    font-family: 'Pokemon Solid','Press Start 2P', cursive;
-    font-size: 1.25rem;
-    height: 10vw;
-    border: none;
-    background-color: lightgrey;
-    margin: 20px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 10px 5px;
+  font-family: "Pokemon Solid", "Press Start 2P", cursive;
+  font-size: 1.25rem;
+  height: 10vw;
+  border: none;
+  background-color: lightgrey;
+  margin: 20px 20px 5px;
+  cursor: pointer;
 }
 
-.no-pokemon{
-    text-align: center;
-    font-size: 1rem;
+.no-pokemon {
+  text-align: center;
+  font-size: 1rem;
 }
 
-.pokemon-info h1, h2{
-    color: aliceblue;
-    margin: 10px;
-    margin-top: 0;
-    padding: 5px;
+.pokemon-info h1,
+h2 {
+  color: aliceblue;
+  margin: 0 10px;
+  padding: 0 5px;
 }
 
 .poke-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
 }
 
 #poke-name {
-    font-size: 1.85rem;
+  font-size: 1.75rem;
 }
 
 #poke-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.65rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65rem;
 }
 
 .poke-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vw;
 }
 
 .pokemon-img {
-    width: 75vw;
+  width: 75vw;
 }
 
 .viewBtn {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  margin: 10px auto 5px;
 }
 
 @media only screen and (min-width: 425px) and (max-width: 1440px) {
-    .pokemon-search {
-        margin-bottom: 2vw;
-    }
-    #poke-name {
-        font-size: 2.5rem;
-    }
-    #poke-type {
-        font-size: 1.85rem;
-    }
-    .no-pokemon{
-        font-size: 1.4rem;
-    }
-    .pokemon-img {
-        width: 70vw;
-    }
-    .search-btn {
-        font-size: 1.5rem;
-    }
+  #poke-name {
+    font-size: 2.5rem;
+  }
+  #poke-type {
+    font-size: 1.85rem;
+  }
+  .no-pokemon {
+    font-size: 1.4rem;
+  }
+  .pokemon-img {
+    width: 70vw;
+  }
+  .search-btn {
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (min-width: 768px){
-    .pokemon-search {
-        /* margin-top: 2vw; */
-        margin-bottom: 4vw;
-    }
-    #poke-name {
-        font-size: 2.5rem;
-    }
-    #poke-type {
-        font-size: 1.25rem;
-    }
-    .no-pokemon{
-        font-size: 1.7rem;
-    }
-    .search-btn {
-        font-size: 2rem;
-        height: 5vw;
-    }
+@media screen and (min-width: 768px) {
+  #poke-name {
+    font-size: 2.5rem;
+  }
+  #poke-type {
+    font-size: 1.25rem;
+  }
+  .no-pokemon {
+    font-size: 1.7rem;
+  }
+  .search-btn {
+    font-size: 2rem;
+    height: 7vw;
+    padding-bottom: 10px;
+  }
 }
 
-@media screen and (min-width: 1024px){
-     .pokemon-search {
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-    }
-    #poke-name {
-        font-size: 3rem;
-    }
-    #poke-type {
-        font-size: 1.5rem;
-    }
-    /* 
-    .no-pokemon{
-        font-size: 2rem;
-    } */
-    .search-btn {
-        height: 3vw;
-    }
-      .pokemon-img {
-        width: 30vw;
-    }
+@media screen and (min-width: 1024px) {
+  #poke-name {
+    font-size: 3rem;
+  }
+  #poke-type {
+    font-size: 1.5rem;
+  }
+  .search-btn {
+    height: 5vw;
+  }
+  .pokemon-img {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #poke-name {
+    font-size: 3rem;
+  }
+  #poke-type {
+    font-size: 1.5rem;
+  }
+  .search-btn {
+    font-size: 2.5rem;
+  }
 }
 
+@media screen and (min-width: 2560px) {
+  #poke-name {
+    font-size: 5rem;
+  }
+  #poke-type {
+    font-size: 3rem;
+  }
+  .search-btn {
+    font-size: 4.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .pokemon-img {
+    width: 30vw;
+  }
+}
